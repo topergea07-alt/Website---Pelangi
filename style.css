@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 16px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1e3a8a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #1e3a8a;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.logo strong {
+    display: block;
+}
+
+.logo small {
+    display: block;
+    font-size: 11px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #bfdbfe;
+}
+
+.menu-button {
+    display: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #1e3a8a;
+    color: white;
+    padding: 50px 8%;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.welcome {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: white;
+    color: #1e3a8a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* SECTION */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-light {
+    background: #f8fafc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: #111827;
+}
+
+/* ABOUT */
+
+.about-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image,
+.about-text {
+    width: 50%;
+}
+
+.image-placeholder {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbeafe;
+    color: #1e3a8a;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #4b5563;
+}
+
+/* VISI MISI */
+
+.visi-misi {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.visi,
+.misi {
+    width: 50%;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.visi h3,
+.misi h3 {
+    color: #1e3a8a;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.misi ul {
+    padding-left: 20px;
+}
+
+.misi li {
+    margin-bottom: 8px;
+}
+
+/* KEGIATAN */
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbeafe;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* STRUKTUR */
+
+.struktur-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.anggota {
+    display: inline-block;
+    min-width: 190px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.anggota.utama {
+    border: 2px solid #2563eb;
+}
+
+.foto-anggota {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbeafe;
+    border-radius: 50%;
+    color: #1e3a8a;
+    font-size: 11px;
+}
+
+.anggota p {
+    color: #2563eb;
+}
+
+.garis {
+    width: 2px;
+    height: 40px;
+    background: #cbd5e1;
+    margin: auto;
+}
+
+.pengurus {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* GALERI */
+
+.gallery {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbeafe;
+    color: #1e3a8a;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* KONTAK */
+
+.contact-section {
+    background: #eff6ff;
+}
+
+.contact-container {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info,
+.contact-form {
+    width: 50%;
+}
+
+.contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    margin-top: 20px;
+}
+
+.contact-item strong {
+    color: #1e3a8a;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #1e3a8a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    padding: 40px 8%;
+}
+
+.footer-bottom {
+    padding: 20px;
+    border-top: 1px solid #374151;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+}
+
+/* ANIMASI */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        padding: 8px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .visi-misi {
+        flex-direction: column;
+    }
+
+    .visi,
+    .misi {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pengurus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
