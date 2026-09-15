@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://topergea07-alt.github.io/Website---Pelangi/sitemap.xml
