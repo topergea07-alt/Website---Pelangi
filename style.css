@@ -2320,3 +2320,35 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+/* =========================================================
+   FIX LOGO NAVBAR
+========================================================= */
+.logo {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    display: block;
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
+    object-fit: contain;
+}
+
+@media (max-width: 750px) {
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo img {
+        width: 45px !important;
+        height: 45px !important;
+        max-width: 45px !important;
+        max-height: 45px !important;
+    }
+}
