@@ -11,37 +11,78 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
+    <title>
+        PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang
+    </title>
+
     <meta name="description"
-          content="Website resmi Organisasi Pelangi. Kenali Pelangi, visi dan misi, kegiatan, program, dokumentasi, berita, dan informasi organisasi.">
+          content="Website resmi Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI). Temukan profil organisasi, visi dan misi, kegiatan, program, kepengurusan, galeri, berita, dan informasi PELANGI.">
 
     <meta name="keywords"
-          content="Pelangi, Organisasi Pelangi, kegiatan Pelangi, program Pelangi, organisasi">
+          content="PELANGI, Persatuan Masyarakat Lahewa Nias Tangerang, masyarakat Lahewa Nias Tangerang, Lahewa Nias, organisasi Nias Tangerang, paguyuban Nias Tangerang">
 
     <meta name="author"
-          content="Organisasi Pelangi">
+          content="PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
 
     <meta name="robots"
           content="index, follow">
 
-    <!-- Open Graph -->
+    <meta name="theme-color"
+          content="#32CD32">
+
+    <!-- CANONICAL -->
+
+    <link rel="canonical"
+          href="https://topergea07-alt.github.io/Website---Pelangi/">
+
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
 
     <meta property="og:title"
-          content="Pelangi | Organisasi">
+          content="PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
 
     <meta property="og:description"
-          content="Website resmi Organisasi Pelangi">
+          content="Website resmi Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI). Profil, kegiatan, program, kepengurusan, galeri, berita, dan informasi organisasi.">
 
     <meta property="og:type"
           content="website">
 
+    <meta property="og:url"
+          content="https://topergea07-alt.github.io/Website---Pelangi/">
+
+    <meta property="og:site_name"
+          content="PELANGI">
+
+    <meta property="og:locale"
+          content="id_ID">
+
+    <meta property="og:image"
+          content="https://topergea07-alt.github.io/Website---Pelangi/images/Logo.png">
+
+    <meta property="og:image:alt"
+          content="Logo PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
+
 
     <!-- =====================================================
-         TITLE
+         TWITTER / SOCIAL MEDIA
     ====================================================== -->
 
-    <title>
-        Pelangi | Organisasi
-    </title>
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
+
+    <meta name="twitter:description"
+          content="Website resmi Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI). Profil, kegiatan, program, kepengurusan, galeri, berita, dan informasi organisasi.">
+
+    <meta name="twitter:image"
+          content="https://topergea07-alt.github.io/Website---Pelangi/images/Logo.png">
+
+    <meta name="twitter:image:alt"
+          content="Logo PELANGI">
 
 
     <!-- =====================================================
@@ -49,6 +90,7 @@
     ====================================================== -->
 
     <link rel="icon"
+          type="image/png"
           href="images/favicon.png">
 
 
@@ -58,6 +100,46 @@
 
     <link rel="stylesheet"
           href="style.css">
+
+
+    <!-- =====================================================
+         ORGANIZATION STRUCTURED DATA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Persatuan Masyarakat Lahewa Nias Tangerang",
+        "alternateName": "PELANGI",
+        "url": "https://topergea07-alt.github.io/Website---Pelangi/",
+        "logo": "https://topergea07-alt.github.io/Website---Pelangi/images/Logo.png",
+        "description": "Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI) merupakan organisasi masyarakat yang menjadi wadah kebersamaan dan persatuan masyarakat Lahewa Nias di Tangerang."
+    }
+    </script>
+
+
+    <!-- =====================================================
+         PREVENT URL HASH / BROWSER SCROLL RESTORATION
+    ====================================================== -->
+
+    <script>
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
+
+        if (window.location.hash) {
+            history.replaceState(
+                null,
+                "",
+                window.location.pathname + window.location.search
+            );
+        }
+
+        window.addEventListener("load", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
 
 </head>
 
@@ -76,14 +158,14 @@
 
         <!-- LOGO -->
 
-<a href="#beranda"
-   class="logo"
-   aria-label="Pelangi">
+        <a href="#beranda"
+           class="logo"
+           aria-label="Pelangi">
 
-    <img src="Logo.png"
-         alt="Logo PELANGI">
+            <img src="Logo.png"
+                 alt="Logo PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
 
-</a>
+        </a>
 
 
         <!-- MOBILE BUTTON -->
@@ -125,7 +207,7 @@
             <li>
                 <a href="#visi-misi">
 
-                    Visi & Misi
+                    Visi &amp; Misi
 
                 </a>
             </li>
@@ -183,8 +265,6 @@
     class="hero">
 
 
-    <!-- Decorative background -->
-
     <div class="hero-decoration hero-decoration-left"></div>
 
     <div class="hero-decoration hero-decoration-right"></div>
@@ -196,7 +276,7 @@
         <span class="hero-badge">
 
             PERSATUAN MASYARAKAT LAHEWA NIAS TANGERANG
-                            (PELANGI)
+            (PELANGI)
 
         </span>
 
@@ -242,8 +322,6 @@
 
     </div>
 
-
-    <!-- SCROLL -->
 
     <div class="hero-scroll">
 
@@ -359,8 +437,6 @@
         <div class="about-content">
 
 
-            <!-- TEXT -->
-
             <div class="about-text">
 
 
@@ -399,8 +475,6 @@
             </div>
 
 
-
-            <!-- HIGHLIGHT -->
 
             <div class="about-highlight">
 
@@ -462,7 +536,7 @@
 
             <h2>
 
-                Visi & <span>Misi</span>
+                Visi &amp; <span>Misi</span>
 
             </h2>
 
@@ -480,8 +554,6 @@
 
         <div class="vision-grid">
 
-
-            <!-- VISI -->
 
             <div class="vision-card">
 
@@ -521,8 +593,6 @@
 
 
 
-            <!-- MISI -->
-
             <div class="vision-card">
 
 
@@ -550,34 +620,26 @@
                 <ul>
 
                     <li>
-
                         Membangun rasa kebersamaan
                         antaranggota.
-
                     </li>
 
 
                     <li>
-
                         Mendorong anggota untuk
                         berkembang dan berkontribusi.
-
                     </li>
 
 
                     <li>
-
                         Menyelenggarakan kegiatan
                         yang positif dan bermanfaat.
-
                     </li>
 
 
                     <li>
-
                         Menciptakan lingkungan organisasi
                         yang aktif dan terbuka.
-
                     </li>
 
                 </ul>
@@ -618,7 +680,6 @@
                 <span>Pedoman</span>
 
             </h2>
-
 
         </div>
 
@@ -750,8 +811,6 @@
         <div class="activity-grid">
 
 
-            <!-- KEGIATAN 1 -->
-
             <article class="activity-card">
 
 
@@ -803,8 +862,6 @@
 
 
 
-            <!-- KEGIATAN 2 -->
-
             <article class="activity-card">
 
 
@@ -855,8 +912,6 @@
             </article>
 
 
-
-            <!-- KEGIATAN 3 -->
 
             <article class="activity-card">
 
@@ -958,8 +1013,6 @@
         <div class="structure-container">
 
 
-            <!-- KETUA -->
-
             <div class="structure-card main-position">
 
 
@@ -991,8 +1044,6 @@
             <div class="structure-line"></div>
 
 
-
-            <!-- PENGURUS -->
 
             <div class="structure-grid">
 
@@ -1186,7 +1237,7 @@
 
                 <img
                     src="images/Dokumentasi organisasi.jpeg"
-                    alt="Dokumentasi organisasi"
+                    alt="Dokumentasi organisasi Pelangi"
                     loading="lazy">
 
                 <div class="gallery-caption">
@@ -1473,8 +1524,6 @@
         <div class="contact-grid">
 
 
-            <!-- ALAMAT -->
-
             <div class="contact-card">
 
 
@@ -1487,7 +1536,7 @@
 
                 <h3>
 
-                    Alamat
+                    jl.Tanjakan Indah BLOK A Kab.Tangerang, BANTEN
 
                 </h3>
 
@@ -1501,8 +1550,6 @@
             </div>
 
 
-
-            <!-- EMAIL -->
 
             <div class="contact-card">
 
@@ -1523,15 +1570,13 @@
 
                 <p>
 
-                    email@pelangi.com
+                    PelangiLahewa08.com
 
                 </p>
 
             </div>
 
 
-
-            <!-- MEDIA SOSIAL -->
 
             <div class="contact-card">
 
@@ -1545,14 +1590,14 @@
 
                 <h3>
 
-                    Media Sosial
+                    Facebook
 
                 </h3>
 
 
                 <p>
 
-                    @pelangi
+                    Persatuan Masyarakat Lahewa Nias Tangerang
 
                 </p>
 
@@ -1597,8 +1642,6 @@
 
 
 
-        <!-- FOOTER MENU -->
-
         <div class="footer-menu">
 
 
@@ -1641,8 +1684,6 @@
 
 
 
-        <!-- SOCIAL MEDIA -->
-
         <div class="footer-social">
 
 
@@ -1673,8 +1714,6 @@
         </div>
 
 
-
-        <!-- COPYRIGHT -->
 
         <div class="copyright">
 
