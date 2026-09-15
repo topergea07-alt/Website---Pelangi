@@ -1,3 +1,11 @@
+// Selalu mulai halaman dari paling atas
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+window.addEventListener("load", function () {
+    window.scrollTo(0, 0);
+});
 /* =========================================================
    PELANGI
    WEBSITE ORGANISASI
