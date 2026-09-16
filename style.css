@@ -496,32 +496,39 @@ button {
 /* =========================================================
    HOMBO BATU NIAS
    SUDUT KANAN BAWAH HERO
+   BESAR • TEGAS • BERKARAKTER NIAS
    ========================================================= */
 
 .hombo-batu {
     position: absolute;
 
+    /* POSISI */
     right: -20px;
-    bottom: -10px;
+    bottom: -18px;
 
-    width: 390px;
-    max-width: 34vw;
+    /* UKURAN LEBIH BESAR */
+    width: 500px;
+    max-width: 38vw;
 
+    /* DI ATAS DEKORASI, DI BAWAH TEKS */
     z-index: 2;
 
     pointer-events: none;
 
-    opacity: 0.30;
+    /* LEBIH TERLIHAT */
+    opacity: 0.48;
 
+    /* SILUET LEBIH TEGAS */
     filter:
         grayscale(1)
-        contrast(1.05);
+        contrast(1.35)
+        brightness(0.72)
+        drop-shadow(0 8px 18px rgba(0, 0, 0, 0.18));
 
     transition:
         opacity 0.4s ease,
         transform 0.4s ease;
 }
-
 
 .hombo-batu img {
     display: block;
@@ -530,40 +537,30 @@ button {
     height: auto;
 
     object-fit: contain;
+
+    filter:
+        contrast(1.15)
+        saturate(0);
 }
 
 
 /* =========================================================
-   TAMENG + PEDANG
-   OPSIONAL — JIKA ADA DI HTML
+   DESKTOP BESAR
    ========================================================= */
 
-.tameng-pedang {
-    position: absolute;
+@media (min-width: 1200px) {
 
-    left: -20px;
-    bottom: -10px;
+    .hombo-batu {
+        width: 470px;
+        max-width: 36vw;
 
-    width: 300px;
-    max-width: 27vw;
+        right: -20px;
+        bottom: -18px;
 
-    z-index: 2;
+        opacity: 0.52;
+    }
 
-    pointer-events: none;
-
-    opacity: 0.25;
 }
-
-
-.tameng-pedang img {
-    display: block;
-
-    width: 100%;
-    height: auto;
-
-    object-fit: contain;
-}
-
 
 /* =========================================================
    HERO CONTENT
