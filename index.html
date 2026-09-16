@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
-    <!-- =====================================================
-         BASIC SEO
-    ====================================================== -->
-
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -16,13 +11,13 @@
     </title>
 
     <meta name="description"
-          content="Website resmi Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI). Temukan profil organisasi, visi dan misi, kegiatan, program, kepengurusan, galeri, berita, dan informasi PELANGI.">
+          content="Website resmi PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang. Mengenal organisasi, visi misi, kegiatan, struktur, galeri, dan informasi PELANGI.">
 
     <meta name="keywords"
-          content="PELANGI, Persatuan Masyarakat Lahewa Nias Tangerang, masyarakat Lahewa Nias Tangerang, Lahewa Nias, organisasi Nias Tangerang, paguyuban Nias Tangerang">
+          content="PELANGI, Lahewa, Nias, Tangerang, Persatuan Masyarakat Lahewa Nias Tangerang">
 
     <meta name="author"
-          content="PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
+          content="PELANGI">
 
     <meta name="robots"
           content="index, follow">
@@ -30,21 +25,15 @@
     <meta name="theme-color"
           content="#32CD32">
 
-    <!-- CANONICAL -->
-
     <link rel="canonical"
           href="https://topergea07-alt.github.io/Website---Pelangi/">
 
-
-    <!-- =====================================================
-         OPEN GRAPH
-    ====================================================== -->
-
+    <!-- OPEN GRAPH -->
     <meta property="og:title"
           content="PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
 
     <meta property="og:description"
-          content="Website resmi Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI). Profil, kegiatan, program, kepengurusan, galeri, berita, dan informasi organisasi.">
+          content="Website resmi Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI).">
 
     <meta property="og:type"
           content="website">
@@ -62,13 +51,9 @@
           content="https://topergea07-alt.github.io/Website---Pelangi/images/Logo.png">
 
     <meta property="og:image:alt"
-          content="Logo PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
+          content="Logo PELANGI">
 
-
-    <!-- =====================================================
-         TWITTER / SOCIAL MEDIA
-    ====================================================== -->
-
+    <!-- TWITTER -->
     <meta name="twitter:card"
           content="summary_large_image">
 
@@ -76,7 +61,7 @@
           content="PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
 
     <meta name="twitter:description"
-          content="Website resmi Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI). Profil, kegiatan, program, kepengurusan, galeri, berita, dan informasi organisasi.">
+          content="Website resmi PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang.">
 
     <meta name="twitter:image"
           content="https://topergea07-alt.github.io/Website---Pelangi/images/Logo.png">
@@ -84,28 +69,16 @@
     <meta name="twitter:image:alt"
           content="Logo PELANGI">
 
-
-    <!-- =====================================================
-         FAVICON
-    ====================================================== -->
-
+    <!-- FAVICON -->
     <link rel="icon"
           type="image/png"
           href="images/favicon.png">
 
-
-    <!-- =====================================================
-         CSS
-    ====================================================== -->
-
+    <!-- CSS -->
     <link rel="stylesheet"
           href="style.css">
 
-
-    <!-- =====================================================
-         ORGANIZATION STRUCTURED DATA
-    ====================================================== -->
-
+    <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -114,137 +87,98 @@
         "alternateName": "PELANGI",
         "url": "https://topergea07-alt.github.io/Website---Pelangi/",
         "logo": "https://topergea07-alt.github.io/Website---Pelangi/images/Logo.png",
-        "description": "Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI) merupakan organisasi masyarakat yang menjadi wadah kebersamaan dan persatuan masyarakat Lahewa Nias di Tangerang."
+        "description": "Persatuan Masyarakat Lahewa Nias Tangerang (PELANGI)"
     }
     </script>
 
-
-    <!-- =====================================================
-         PREVENT URL HASH / BROWSER SCROLL RESTORATION
-    ====================================================== -->
-
+    <!-- Mencegah loncat halaman saat refresh -->
     <script>
-        if ("scrollRestoration" in history) {
-            history.scrollRestoration = "manual";
-        }
-
         if (window.location.hash) {
             history.replaceState(
                 null,
-                "",
-                window.location.pathname + window.location.search
+                null,
+                window.location.pathname
             );
         }
 
-        window.addEventListener("load", function () {
-            window.scrollTo(0, 0);
-        });
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
     </script>
 
 </head>
 
-
 <body>
-
 
 <!-- =========================================================
      NAVBAR
-========================================================= -->
+     ========================================================= -->
 
 <nav class="navbar">
 
     <div class="nav-container">
 
-
-        <!-- LOGO -->
-
         <a href="#beranda"
            class="logo"
-           aria-label="Pelangi">
+           aria-label="PELANGI">
 
             <img src="Logo.png"
-                 alt="Logo PELANGI - Persatuan Masyarakat Lahewa Nias Tangerang">
+                 alt="Logo PELANGI">
 
         </a>
 
 
-        <!-- MOBILE BUTTON -->
-
-        <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Buka menu"
-            aria-expanded="false">
+        <button class="menu-toggle"
+                aria-label="Buka menu"
+                aria-expanded="false">
 
             ☰
 
         </button>
 
 
-        <!-- MENU -->
-
         <ul class="nav-menu">
 
             <li>
                 <a href="#beranda"
                    class="active">
-
                     Beranda
-
                 </a>
             </li>
-
 
             <li>
                 <a href="#tentang">
-
                     Tentang
-
                 </a>
             </li>
-
 
             <li>
                 <a href="#visi-misi">
-
                     Visi &amp; Misi
-
                 </a>
             </li>
-
 
             <li>
                 <a href="#kegiatan">
-
                     Kegiatan
-
                 </a>
             </li>
-
 
             <li>
                 <a href="#struktur">
-
                     Organisasi
-
                 </a>
             </li>
-
 
             <li>
                 <a href="#galeri">
-
                     Galeri
-
                 </a>
             </li>
 
-
             <li>
                 <a href="#kontak">
-
                     Kontak
-
                 </a>
             </li>
 
@@ -255,27 +189,56 @@
 </nav>
 
 
-
 <!-- =========================================================
      HERO / BERANDA
-========================================================= -->
+     ========================================================= -->
 
-<header
-    id="beranda"
-    class="hero">
+<header id="beranda" class="hero">
 
-
+    <!-- DEKORASI HERO -->
     <div class="hero-decoration hero-decoration-left"></div>
-
     <div class="hero-decoration hero-decoration-right"></div>
 
 
-    <div class="hero-content">
+    <!-- =====================================================
+         TAMENG + PEDANG NIAS
+         KIRI BAWAH
+         ===================================================== -->
 
+    <div class="tameng-pedang">
+
+        <img src="images/tameng-pedang-nias.png"
+             alt="Tameng dan pedang Nias"
+             aria-hidden="true">
+
+    </div>
+
+
+    <!-- =====================================================
+         HOMBO BATU BESAR
+         KANAN BAWAH
+         ===================================================== -->
+
+    <div class="hombo-batu">
+
+        <img src="images/hombo-batu.png"
+             alt="Hombo Batu Nias"
+             aria-hidden="true">
+
+    </div>
+
+
+    <!-- =====================================================
+         TULISAN HERO
+         TETAP DI TENGAH
+         ===================================================== -->
+
+    <div class="hero-content">
 
         <span class="hero-badge">
 
             PERSATUAN MASYARAKAT LAHEWA NIAS TANGERANG
+            <br>
             (PELANGI)
 
         </span>
@@ -293,35 +256,27 @@
 
             Mengenal lebih dekat Organisasi Pelangi,
             perjalanan, visi dan misi, kegiatan,
-            serta berbagai kontribusi yang dilakukan
-            bersama.
+            serta berbagai kontribusi yang dilakukan bersama.
 
         </p>
 
 
         <div class="hero-buttons">
 
-
-            <a href="#tentang"
-               class="btn">
-
+            <a href="#tentang" class="btn">
                 Kenali Pelangi
-
             </a>
 
-
-            <a href="#kegiatan"
-               class="btn btn-outline">
-
+            <a href="#kegiatan" class="btn btn-outline">
                 Lihat Kegiatan
-
             </a>
-
 
         </div>
 
     </div>
 
+
+    <!-- SCROLL -->
 
     <div class="hero-scroll">
 
@@ -337,11 +292,9 @@
 
 </header>
 
-
-
 <!-- =========================================================
-     INTRO / SAMBUTAN SINGKAT
-========================================================= -->
+     INTRO
+     ========================================================= -->
 
 <section class="intro-section">
 
@@ -359,27 +312,20 @@
 
             <div>
 
-                <span class="section-label">
-
-                    SELAMAT DATANG
-
-                </span>
-
-
                 <h2>
 
-                    Mengenal Organisasi
-                    <span>Pelangi</span>
+                    Mengenal
+                    <span>Organisasi Pelangi</span>
 
                 </h2>
 
 
                 <p>
 
-                    Pelangi merupakan sebuah organisasi
-                    yang menjadi wadah untuk berkumpul,
-                    berkolaborasi, belajar, dan berkembang
-                    bersama.
+                    PELANGI hadir sebagai wadah kebersamaan
+                    masyarakat Lahewa Nias Tangerang untuk
+                    mempererat persaudaraan, menjaga budaya,
+                    serta membangun kebersamaan.
 
                 </p>
 
@@ -392,15 +338,12 @@
 </section>
 
 
-
 <!-- =========================================================
-     TENTANG PELANGI
-========================================================= -->
+     TENTANG
+     ========================================================= -->
 
-<section
-    id="tentang"
-    class="section">
-
+<section id="tentang"
+         class="section">
 
     <div class="container">
 
@@ -408,30 +351,24 @@
         <div class="section-title">
 
             <span class="section-label">
-
-                TENTANG KAMI
-
+                TENTANG PELANGI
             </span>
-
 
             <h2>
 
-                Tentang
-                <span>Pelangi</span>
+                Bersatu dalam
+                <span>Kebersamaan</span>
 
             </h2>
 
-
             <p>
 
-                Mengenal lebih jauh mengenai Organisasi
-                Pelangi dan nilai yang menjadi dasar
-                dalam setiap kegiatan.
+                Mengenal lebih dekat perjalanan dan
+                keberadaan PELANGI.
 
             </p>
 
         </div>
-
 
 
         <div class="about-content">
@@ -439,71 +376,74 @@
 
             <div class="about-text">
 
-
                 <h3>
 
-                    Bersama untuk tumbuh,
-                    berkarya, dan memberikan
-                    <span>dampak positif.</span>
+                    Tentang
+                    <span>PELANGI</span>
 
                 </h3>
 
 
                 <p>
 
-                    Organisasi Pelangi hadir sebagai
-                    wadah kebersamaan bagi para anggotanya
-                    untuk mengembangkan potensi,
-                    membangun hubungan yang baik,
-                    serta menjalankan berbagai kegiatan
-                    yang bermanfaat.
+                    Persatuan Masyarakat Lahewa Nias Tangerang
+                    atau PELANGI merupakan wadah yang dibangun
+                    untuk mempererat hubungan antar masyarakat
+                    Lahewa Nias yang berada di Tangerang.
 
                 </p>
 
 
                 <p>
 
-                    Melalui semangat kebersamaan,
-                    Pelangi terus berupaya menciptakan
-                    lingkungan organisasi yang aktif,
-                    terbuka, dan mampu memberikan
-                    kontribusi positif.
+                    Organisasi ini menjadi tempat untuk
+                    membangun kebersamaan, saling mendukung,
+                    menjaga nilai kekeluargaan, serta
+                    melestarikan budaya Nias.
 
                 </p>
 
 
-            </div>
+                <p>
 
+                    Melalui berbagai kegiatan sosial,
+                    kebersamaan, olahraga, pertemuan anggota,
+                    dan kegiatan organisasi lainnya, PELANGI
+                    terus berupaya memberikan manfaat bagi
+                    masyarakat.
+
+                </p>
+
+            </div>
 
 
             <div class="about-highlight">
 
-
                 <div class="highlight-icon">
 
-                    🌈
+                    🌿
 
                 </div>
 
 
                 <h3>
 
-                    PELANGI
+                    Lahewa
+                    <br>
+                    Nias
 
                 </h3>
 
 
                 <p>
 
-                    Beragam warna menjadi satu,
-                    menciptakan kebersamaan yang
-                    indah dan bermakna.
+                    Menjaga persaudaraan,
+                    budaya dan kebersamaan
+                    di tanah perantauan.
 
                 </p>
 
-
             </div>
-
 
         </div>
 
@@ -512,15 +452,12 @@
 </section>
 
 
-
 <!-- =========================================================
-     VISI MISI
-========================================================= -->
+     VISI & MISI
+     ========================================================= -->
 
-<section
-    id="visi-misi"
-    class="section vision-section">
-
+<section id="visi-misi"
+         class="section vision-section">
 
     <div class="container">
 
@@ -528,28 +465,24 @@
         <div class="section-title">
 
             <span class="section-label">
-
-                LANDASAN ORGANISASI
-
+                ARAH ORGANISASI
             </span>
-
 
             <h2>
 
-                Visi &amp; <span>Misi</span>
+                Visi &amp;
+                <span>Misi</span>
 
             </h2>
 
-
             <p>
 
-                Landasan yang menjadi arah dan pedoman
-                Organisasi Pelangi.
+                Landasan PELANGI dalam membangun
+                kebersamaan dan organisasi.
 
             </p>
 
         </div>
-
 
 
         <div class="vision-grid">
@@ -557,95 +490,74 @@
 
             <div class="vision-card">
 
-
-                <div class="vision-icon">
-
-                    👁️
-
+                <div class="vision-number">
+                    01
                 </div>
 
 
-                <span class="vision-number">
-
-                    01
-
-                </span>
+                <div class="vision-icon">
+                    🎯
+                </div>
 
 
                 <h3>
-
                     Visi
-
                 </h3>
 
 
                 <p>
 
-                    Menjadi organisasi yang mampu
-                    membangun kebersamaan, mengembangkan
-                    potensi anggota, dan memberikan
-                    kontribusi positif bagi lingkungan
-                    sekitar.
+                    Mewujudkan masyarakat Lahewa Nias
+                    Tangerang yang bersatu, harmonis,
+                    peduli, dan mampu menjaga nilai-nilai
+                    kebersamaan serta budaya.
 
                 </p>
 
             </div>
 
 
-
             <div class="vision-card">
 
-
-                <div class="vision-icon">
-
-                    🎯
-
+                <div class="vision-number">
+                    02
                 </div>
 
 
-                <span class="vision-number">
-
-                    02
-
-                </span>
+                <div class="vision-icon">
+                    🤝
+                </div>
 
 
                 <h3>
-
                     Misi
-
                 </h3>
 
 
                 <ul>
 
                     <li>
-                        Membangun rasa kebersamaan
-                        antaranggota.
+                        Mempererat hubungan dan persaudaraan
+                        antar anggota.
                     </li>
 
-
                     <li>
-                        Mendorong anggota untuk
-                        berkembang dan berkontribusi.
+                        Membangun kegiatan sosial dan
+                        kebersamaan.
                     </li>
 
-
                     <li>
-                        Menyelenggarakan kegiatan
-                        yang positif dan bermanfaat.
+                        Menjaga dan memperkenalkan budaya Nias.
                     </li>
 
-
                     <li>
-                        Menciptakan lingkungan organisasi
-                        yang aktif dan terbuka.
+                        Mendorong partisipasi anggota dalam
+                        kegiatan organisasi.
                     </li>
 
                 </ul>
 
             </div>
-
 
         </div>
 
@@ -654,13 +566,11 @@
 </section>
 
 
-
 <!-- =========================================================
-     NILAI ORGANISASI
-========================================================= -->
+     NILAI
+     ========================================================= -->
 
 <section class="section values-section">
-
 
     <div class="container">
 
@@ -668,21 +578,24 @@
         <div class="section-title">
 
             <span class="section-label">
-
-                NILAI KAMI
-
+                NILAI PELANGI
             </span>
-
 
             <h2>
 
-                Nilai yang Menjadi
-                <span>Pedoman</span>
+                Nilai yang
+                <span>Kami Jaga</span>
 
             </h2>
 
-        </div>
+            <p>
 
+                Prinsip yang menjadi bagian dari
+                kebersamaan PELANGI.
+
+            </p>
+
+        </div>
 
 
         <div class="values-grid">
@@ -699,8 +612,10 @@
                 </h3>
 
                 <p>
-                    Mengutamakan kerja sama dan
-                    rasa saling menghargai.
+
+                    Mengutamakan persaudaraan
+                    dan kekeluargaan.
+
                 </p>
 
             </div>
@@ -709,7 +624,7 @@
             <div class="value-card">
 
                 <div class="value-icon">
-                    💡
+                    🎨
                 </div>
 
                 <h3>
@@ -717,8 +632,10 @@
                 </h3>
 
                 <p>
-                    Mendorong ide dan gagasan
-                    baru dalam setiap kegiatan.
+
+                    Mendorong ide dan kegiatan
+                    yang positif.
+
                 </p>
 
             </div>
@@ -735,8 +652,10 @@
                 </h3>
 
                 <p>
-                    Terus belajar dan berkembang
-                    menjadi lebih baik.
+
+                    Bersama membangun organisasi
+                    yang berkembang.
+
                 </p>
 
             </div>
@@ -753,12 +672,13 @@
                 </h3>
 
                 <p>
-                    Membangun kepedulian terhadap
-                    sesama dan lingkungan.
+
+                    Saling membantu dan peduli
+                    terhadap sesama.
+
                 </p>
 
             </div>
-
 
         </div>
 
@@ -767,15 +687,12 @@
 </section>
 
 
-
 <!-- =========================================================
      KEGIATAN
-========================================================= -->
+     ========================================================= -->
 
-<section
-    id="kegiatan"
-    class="section activities-section">
-
+<section id="kegiatan"
+         class="section activities-section">
 
     <div class="container">
 
@@ -783,29 +700,24 @@
         <div class="section-title">
 
             <span class="section-label">
-
                 KEGIATAN
-
             </span>
-
 
             <h2>
 
-                Kegiatan
-                <span>Pelangi</span>
+                Aktivitas
+                <span>PELANGI</span>
 
             </h2>
-
 
             <p>
 
                 Berbagai kegiatan yang menjadi bagian
-                dari perjalanan Organisasi Pelangi.
+                dari kebersamaan anggota.
 
             </p>
 
         </div>
-
 
 
         <div class="activity-grid">
@@ -813,41 +725,32 @@
 
             <article class="activity-card">
 
-
                 <div class="activity-image">
 
-                    <img
-                        src="images/Olahraga.jpeg"
-                        alt="Kegiatan olahraga PELANGI"
-                        loading="lazy">
+                    <img src="images/Olahraga.jpeg"
+                         alt="Kegiatan olahraga PELANGI"
+                         loading="lazy">
 
                 </div>
 
 
                 <div class="activity-content">
 
-
                     <span class="activity-category">
-
-                        KEGIATAN
-
+                        OLAHRAGA
                     </span>
 
-
                     <h3>
-
-                        Kegiatan Organisasi
-
+                        Kegiatan Olahraga
                     </h3>
-
 
                     <p>
 
-                        Dokumentasi dan informasi
-                        mengenai kegiatan organisasi.
+                        Kegiatan olahraga sebagai sarana
+                        menjaga kesehatan sekaligus
+                        mempererat kebersamaan anggota.
 
                     </p>
-
 
                     <a href="#galeri"
                        class="activity-link">
@@ -859,46 +762,36 @@
                 </div>
 
             </article>
-
 
 
             <article class="activity-card">
 
-
                 <div class="activity-image">
 
-                    <img
-                        src="images/Pelantikan.jpeg"
-                        alt="Kegiatan pelantikan PELANGI"
-                        loading="lazy">
+                    <img src="images/Pelantikan.jpeg"
+                         alt="Pelantikan pengurus PELANGI"
+                         loading="lazy">
 
                 </div>
 
 
                 <div class="activity-content">
 
-
                     <span class="activity-category">
-
-                        AKTIVITAS
-
+                        ORGANISASI
                     </span>
 
-
                     <h3>
-
-                        Aktivitas Anggota
-
+                        Pelantikan
                     </h3>
-
 
                     <p>
 
-                        Berbagai aktivitas dan
-                        kebersamaan anggota Pelangi.
+                        Momen pelantikan menjadi bagian
+                        penting dalam perjalanan organisasi
+                        PELANGI.
 
                     </p>
-
 
                     <a href="#galeri"
                        class="activity-link">
@@ -910,46 +803,36 @@
                 </div>
 
             </article>
-
 
 
             <article class="activity-card">
 
-
                 <div class="activity-image">
 
-                    <img
-                        src="images/Pertemuan Anggota.jpeg"
-                        alt="Kegiatan pertemuan anggota PELANGI"
-                        loading="lazy">
+                    <img src="images/Pertemuan Anggota.jpeg"
+                         alt="Pertemuan anggota PELANGI"
+                         loading="lazy">
 
                 </div>
 
 
                 <div class="activity-content">
 
-
                     <span class="activity-category">
-
-                        PROGRAM
-
+                        KEBERSAMAAN
                     </span>
 
-
                     <h3>
-
-                        Program Pelangi
-
+                        Pertemuan Anggota
                     </h3>
-
 
                     <p>
 
-                        Program dan kegiatan yang
-                        dijalankan oleh organisasi.
+                        Pertemuan anggota menjadi ruang
+                        untuk berdiskusi, berbagi informasi,
+                        dan mempererat persaudaraan.
 
                     </p>
-
 
                     <a href="#galeri"
                        class="activity-link">
@@ -961,7 +844,6 @@
                 </div>
 
             </article>
-
 
         </div>
 
@@ -970,15 +852,12 @@
 </section>
 
 
-
 <!-- =========================================================
      STRUKTUR ORGANISASI
-========================================================= -->
+     ========================================================= -->
 
-<section
-    id="struktur"
-    class="section structure-section">
-
+<section id="struktur"
+         class="section structure-section">
 
     <div class="container">
 
@@ -986,11 +865,8 @@
         <div class="section-title">
 
             <span class="section-label">
-
                 ORGANISASI
-
             </span>
-
 
             <h2>
 
@@ -999,15 +875,13 @@
 
             </h2>
 
-
             <p>
 
-                Struktur kepengurusan Organisasi Pelangi.
+                Susunan kepengurusan PELANGI.
 
             </p>
 
         </div>
-
 
 
         <div class="structure-container">
@@ -1015,34 +889,22 @@
 
             <div class="structure-card main-position">
 
-
                 <div class="person-icon">
-
                     👤
-
                 </div>
 
-
                 <span>
-
                     KETUA
-
                 </span>
 
-
                 <h3>
-
                     Joelius Zendrato
-
                 </h3>
-
 
             </div>
 
 
-
             <div class="structure-line"></div>
-
 
 
             <div class="structure-grid">
@@ -1098,9 +960,7 @@
 
                 </div>
 
-
             </div>
-
 
         </div>
 
@@ -1109,15 +969,12 @@
 </section>
 
 
-
 <!-- =========================================================
      GALERI
-========================================================= -->
+     ========================================================= -->
 
-<section
-    id="galeri"
-    class="section gallery-section">
-
+<section id="galeri"
+         class="section gallery-section">
 
     <div class="container">
 
@@ -1125,29 +982,24 @@
         <div class="section-title">
 
             <span class="section-label">
-
                 DOKUMENTASI
-
             </span>
-
 
             <h2>
 
                 Galeri
-                <span>Pelangi</span>
+                <span>PELANGI</span>
 
             </h2>
 
-
             <p>
 
-                Dokumentasi berbagai kegiatan
-                dan momen kebersamaan Pelangi.
+                Dokumentasi kegiatan dan kebersamaan
+                masyarakat Lahewa Nias Tangerang.
 
             </p>
 
         </div>
-
 
 
         <div class="gallery">
@@ -1155,15 +1007,12 @@
 
             <div class="gallery-item">
 
-                <img
-                    src="images/Kegiatan Pelangi.jpeg"
-                    alt="Dokumentasi kegiatan Pelangi"
-                    loading="lazy">
+                <img src="images/Kegiatan Pelangi.jpeg"
+                     alt="Kegiatan PELANGI"
+                     loading="lazy">
 
                 <div class="gallery-caption">
-
-                    Kegiatan Pelangi
-
+                    Kegiatan PELANGI
                 </div>
 
             </div>
@@ -1171,15 +1020,12 @@
 
             <div class="gallery-item">
 
-                <img
-                    src="images/Kebersamaan Anggota Pelangi.jpeg"
-                    alt="Kebersamaan anggota Pelangi"
-                    loading="lazy">
+                <img src="images/Kebersamaan Anggota Pelangi.jpeg"
+                     alt="Kebersamaan anggota PELANGI"
+                     loading="lazy">
 
                 <div class="gallery-caption">
-
-                    Kebersamaan
-
+                    Kebersamaan Anggota
                 </div>
 
             </div>
@@ -1187,15 +1033,12 @@
 
             <div class="gallery-item">
 
-                <img
-                    src="images/Aktivitas Organisasi Pelangi.jpeg"
-                    alt="Aktivitas Organisasi Pelangi"
-                    loading="lazy">
+                <img src="images/Aktivitas Organisasi Pelangi.jpeg"
+                     alt="Aktivitas organisasi PELANGI"
+                     loading="lazy">
 
                 <div class="gallery-caption">
-
                     Aktivitas Organisasi
-
                 </div>
 
             </div>
@@ -1203,15 +1046,12 @@
 
             <div class="gallery-item">
 
-                <img
-                    src="images/Program Pelangi.jpeg"
-                    alt="Program Pelangi"
-                    loading="lazy">
+                <img src="images/Program Pelangi.jpeg"
+                     alt="Program PELANGI"
+                     loading="lazy">
 
                 <div class="gallery-caption">
-
-                    Program Pelangi
-
+                    Program PELANGI
                 </div>
 
             </div>
@@ -1219,15 +1059,12 @@
 
             <div class="gallery-item">
 
-                <img
-                    src="images/Kegiatan Bersama Pelangi.jpeg"
-                    alt="Kegiatan bersama Pelangi"
-                    loading="lazy">
+                <img src="images/Kegiatan Bersama Pelangi.jpeg"
+                     alt="Kegiatan bersama PELANGI"
+                     loading="lazy">
 
                 <div class="gallery-caption">
-
-                    Bersama Pelangi
-
+                    Kegiatan Bersama
                 </div>
 
             </div>
@@ -1235,19 +1072,15 @@
 
             <div class="gallery-item">
 
-                <img
-                    src="images/Dokumentasi organisasi.jpeg"
-                    alt="Dokumentasi organisasi Pelangi"
-                    loading="lazy">
+                <img src="images/Dokumentasi organisasi.jpeg"
+                     alt="Dokumentasi organisasi PELANGI"
+                     loading="lazy">
 
                 <div class="gallery-caption">
-
-                    Dokumentasi
-
+                    Dokumentasi Organisasi
                 </div>
 
             </div>
-
 
         </div>
 
@@ -1256,13 +1089,11 @@
 </section>
 
 
-
 <!-- =========================================================
-     BERITA / INFORMASI
-========================================================= -->
+     NEWS
+     ========================================================= -->
 
 <section class="section news-section">
-
 
     <div class="container">
 
@@ -1270,11 +1101,8 @@
         <div class="section-title">
 
             <span class="section-label">
-
                 INFORMASI
-
             </span>
-
 
             <h2>
 
@@ -1283,16 +1111,14 @@
 
             </h2>
 
-
             <p>
 
-                Informasi terbaru mengenai kegiatan
-                dan perkembangan Organisasi Pelangi.
+                Informasi dan kabar terbaru mengenai
+                kegiatan organisasi.
 
             </p>
 
         </div>
-
 
 
         <div class="news-grid">
@@ -1300,11 +1126,10 @@
 
             <article class="news-card">
 
-
                 <div class="news-date">
 
                     <span>
-                        INFO
+                        INFORMASI PELANGI
                     </span>
 
                 </div>
@@ -1313,24 +1138,19 @@
                 <div class="news-content">
 
                     <h3>
-
-                        Informasi Organisasi
-
+                        Kebersamaan Anggota
                     </h3>
-
 
                     <p>
 
-                        Informasi terbaru dari
-                        Organisasi Pelangi.
+                        Membangun hubungan yang semakin
+                        erat melalui berbagai kegiatan
+                        bersama.
 
                     </p>
 
-
                     <a href="#kontak">
-
                         Selengkapnya →
-
                     </a>
 
                 </div>
@@ -1338,9 +1158,7 @@
             </article>
 
 
-
             <article class="news-card">
-
 
                 <div class="news-date">
 
@@ -1354,24 +1172,18 @@
                 <div class="news-content">
 
                     <h3>
-
-                        Kegiatan Terbaru
-
+                        Kegiatan Organisasi
                     </h3>
-
 
                     <p>
 
-                        Ikuti informasi kegiatan
-                        terbaru Organisasi Pelangi.
+                        Berbagai kegiatan menjadi bagian
+                        dari perjalanan PELANGI.
 
                     </p>
 
-
                     <a href="#kegiatan">
-
                         Lihat kegiatan →
-
                     </a>
 
                 </div>
@@ -1379,14 +1191,12 @@
             </article>
 
 
-
             <article class="news-card">
-
 
                 <div class="news-date">
 
                     <span>
-                        PELANGI
+                        KEBERSAMAAN
                     </span>
 
                 </div>
@@ -1395,100 +1205,80 @@
                 <div class="news-content">
 
                     <h3>
-
-                        Kabar Pelangi
-
+                        Persaudaraan Lahewa
                     </h3>
-
 
                     <p>
 
-                        Berbagai cerita dan perkembangan
-                        dari Pelangi.
+                        Menjaga nilai kekeluargaan dan
+                        persaudaraan masyarakat Lahewa.
 
                     </p>
 
-
                     <a href="#tentang">
-
-                        Tentang Pelangi →
-
+                        Tentang PELANGI →
                     </a>
 
                 </div>
 
             </article>
 
-
         </div>
 
     </div>
 
 </section>
-
 
 
 <!-- =========================================================
-     CALL TO ACTION
-========================================================= -->
+     CTA
+     ========================================================= -->
 
 <section class="cta">
 
-
-    <div class="container">
-
-
-        <div class="cta-content">
+    <div class="cta-content">
 
 
-            <span class="section-label">
-
-                BERSAMA PELANGI
-
-            </span>
+        <span class="section-label">
+            PELANGI
+        </span>
 
 
-            <h2>
+        <h2>
 
-                Bersama membangun
-                kebersamaan yang lebih baik.
+            Bersama Menjaga
+            Kebersamaan
 
-            </h2>
-
-
-            <p>
-
-                Mari mengenal, berpartisipasi,
-                dan menjadi bagian dari perjalanan
-                Organisasi Pelangi.
-
-            </p>
+        </h2>
 
 
-            <a href="#kontak"
-               class="btn">
+        <p>
 
-                Hubungi Pelangi
+            Mari terus membangun persaudaraan,
+            kebersamaan, dan kepedulian masyarakat
+            Lahewa Nias Tangerang.
 
-            </a>
+        </p>
 
 
-        </div>
+        <a href="#kontak"
+           class="btn">
+
+            Hubungi PELANGI
+
+        </a>
 
     </div>
 
 </section>
-
 
 
 <!-- =========================================================
      KONTAK
-========================================================= -->
+     ========================================================= -->
 
-<section
-    id="kontak"
-    class="section contact-section">
-
+<section id="kontak"
+         class="section contact-section">
 
     <div class="container">
 
@@ -1496,29 +1286,24 @@
         <div class="section-title">
 
             <span class="section-label">
-
                 HUBUNGI KAMI
-
             </span>
-
 
             <h2>
 
                 Kontak
-                <span>Pelangi</span>
+                <span>PELANGI</span>
 
             </h2>
 
-
             <p>
 
-                Untuk informasi lebih lanjut,
-                silakan hubungi Organisasi Pelangi.
+                Informasi dan komunikasi bersama
+                organisasi PELANGI.
 
             </p>
 
         </div>
-
 
 
         <div class="contact-grid">
@@ -1526,47 +1311,34 @@
 
             <div class="contact-card">
 
-
                 <div class="contact-icon">
-
                     📍
-
                 </div>
 
-
                 <h3>
-
-                    jl.Tanjakan Indah BLOK A Kab.Tangerang, BANTEN
-
+                    Alamat
                 </h3>
-
 
                 <p>
 
-                    Isi alamat organisasi di sini
+                    jl. Tanjakan Indah BLOK A
+                    Kab. Tangerang,
+                    BANTEN
 
                 </p>
 
             </div>
 
 
-
             <div class="contact-card">
 
-
                 <div class="contact-icon">
-
                     ✉️
-
                 </div>
 
-
                 <h3>
-
                     Email
-
                 </h3>
-
 
                 <p>
 
@@ -1577,32 +1349,24 @@
             </div>
 
 
-
             <div class="contact-card">
 
-
                 <div class="contact-icon">
-
-                    📱
-
+                    f
                 </div>
 
-
                 <h3>
-
                     Facebook
-
                 </h3>
-
 
                 <p>
 
-                    Persatuan Masyarakat Lahewa Nias Tangerang
+                    Persatuan Masyarakat
+                    Lahewa Nias Tangerang
 
                 </p>
 
             </div>
-
 
         </div>
 
@@ -1611,13 +1375,11 @@
 </section>
 
 
-
 <!-- =========================================================
      FOOTER
-========================================================= -->
+     ========================================================= -->
 
 <footer>
-
 
     <div class="footer-content">
 
@@ -1625,137 +1387,98 @@
         <div class="footer-brand">
 
             <h2>
-
                 PELANGI
-
             </h2>
-
 
             <p>
 
-                Bersama dalam perbedaan,
-                berkarya dalam kebersamaan.
+                Persatuan Masyarakat
+                Lahewa Nias Tangerang
 
             </p>
 
         </div>
 
 
-
         <div class="footer-menu">
-
 
             <a href="#beranda">
                 Beranda
             </a>
 
-
             <a href="#tentang">
                 Tentang
             </a>
-
 
             <a href="#visi-misi">
                 Visi &amp; Misi
             </a>
 
-
             <a href="#kegiatan">
                 Kegiatan
             </a>
-
 
             <a href="#struktur">
                 Organisasi
             </a>
 
-
             <a href="#galeri">
                 Galeri
             </a>
-
 
             <a href="#kontak">
                 Kontak
             </a>
 
-
         </div>
-
 
 
         <div class="footer-social">
 
-
-            <a href="#"
-               aria-label="Instagram">
-
-                Instagram
-
-            </a>
-
-
-            <a href="#"
-               aria-label="Facebook">
-
+            <a href="#kontak">
                 Facebook
-
             </a>
 
-
-            <a href="#"
-               aria-label="WhatsApp">
-
-                WhatsApp
-
+            <a href="#kontak">
+                Kontak
             </a>
-
 
         </div>
-
 
 
         <div class="copyright">
 
             <p>
 
-                © <span id="current-year"></span>
-                Organisasi Pelangi.
-                All Rights Reserved.
+                © 2026 PELANGI -
+                Persatuan Masyarakat Lahewa Nias Tangerang.
+                Semua hak dilindungi.
 
             </p>
 
         </div>
-
 
     </div>
 
 </footer>
 
 
-
 <!-- =========================================================
      BACK TO TOP
-========================================================= -->
+     ========================================================= -->
 
-<button
-    class="back-to-top"
-    type="button"
-    aria-label="Kembali ke atas">
+<button class="back-to-top"
+        aria-label="Kembali ke atas">
 
     ↑
 
 </button>
 
 
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
+<!-- JAVASCRIPT -->
 
 <script src="script.js"></script>
 
 
 </body>
-
 </html>
