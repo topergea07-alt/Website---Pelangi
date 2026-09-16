@@ -3252,6 +3252,42 @@ footer::after {
         opacity: 0.16;
     }
 
+    /* =========================================================
+   HP SANGAT KECIL
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .hombo-batu {
+        width: 215px;
+        max-width: 67vw;
+
+        right: -35px;
+        bottom: -3px;
+
+        opacity: 0.28;
+    }
+
+}
+
+/* =========================================================
+   HP KECIL
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .hombo-batu {
+        width: 240px;
+        max-width: 65vw;
+
+        right: -38px;
+        bottom: -5px;
+
+        opacity: 0.30;
+    }
+
+}
+
 
     /* TAMENG HP KECIL */
 
